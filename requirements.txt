@@ -1,0 +1,48 @@
+# Certificate Generation System - Python Dependencies
+# ============================================================================
+# This file lists all Python packages required to run the certificate
+# generation system.
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# Or with virtual environment:
+#   python -m venv venv
+#   source venv/bin/activate  # On Windows: venv\Scripts\activate
+#   pip install -r requirements.txt
+# ============================================================================
+
+# OpenCV - Computer vision library for image processing
+# Used for: Loading templates, drawing text, saving images
+opencv-python>=4.8.0,<5.0.0
+
+# Pandas - Data manipulation and analysis
+# Used for: Reading Excel files containing participant data
+pandas>=2.0.0,<3.0.0
+
+# OpenPyXL - Excel file support for pandas
+# Used for: Reading .xlsx files
+openpyxl>=3.1.0,<4.0.0
+
+# img2pdf - Convert images to PDF
+# Used for: Converting PNG certificates to PDF format
+img2pdf>=0.4.4,<1.0.0
+
+# Pillow - Python Imaging Library
+# Used for: Additional image processing capabilities
+Pillow>=10.0.0,<11.0.0
+
+# NumPy - Numerical computing library
+# Used for: Array operations and image manipulation (required by OpenCV)
+numpy>=1.24.0,<2.0.0
+
+# ============================================================================
+# Development Dependencies (optional)
+# ============================================================================
+# Uncomment these if you need development tools
+
+# pytest>=7.4.0          # Testing framework
+# black>=23.0.0          # Code formatter
+# flake8>=6.0.0          # Code linter
+# mypy>=1.5.0            # Static type checker
+# pylint>=2.17.0         # Code quality checker
